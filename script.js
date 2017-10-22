@@ -16,7 +16,7 @@
     //     color: invisible,
     //     isAvailable: false.
     // }
-    // Czemu nie działają te wyżej?
+    // Czemu nie działają te wyżej??
 
     let iPhone6s = new Phone('Apple', 360, 'white', 'false');
     let SamsungS8 = new Phone('Samsung', 200, 'black', 'true');
