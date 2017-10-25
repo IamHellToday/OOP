@@ -22,21 +22,22 @@
     let SamsungS8 = new Phone('Samsung', 200, 'black', 'true');
     let XiamomiMI = new Phone('Xiaomi', 10, 'invisible', 'false');
 
-    let isAvailable = function() {
-        if(isAvailable != false) {
-            console.log("Available")
+    let isAvailable = function(param) {
+        if(isAvailable === true) {
+            return "Available";
         }
         else {
-            console.log("Not Available")
+            return "Not Available";
         }
     };
-    function Phone(brand, price, color){
+    function Phone(brand, price, color, param){
         this.brand = brand;
         this.price = price;
         this.color = color;
+        this.param = param;
     };
     Phone.prototype.println = function(){
-        console.log(`Phone brand is ${this.brand}, the color is ${this.color} and the price equals to ${this.price}$ and is ${isAvailable}`);
+        console.log(`Phone brand is ${this.brand}, the color is ${this.color} and the price equals to ${this.price}$ and is ${this.param}`);
     };
 
 iPhone6s.println();
